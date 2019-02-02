@@ -1,0 +1,12 @@
+{
+  "name": "testing-ii",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/LeviApp/testing-ii.git",
+  "author": "Levi Appenfelder <levi.appenfelder@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "react-testing-library": "^5.4.4"
+  }
+}
