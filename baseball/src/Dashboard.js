@@ -5,10 +5,12 @@ class Dashboard extends Component {
     return (
       <div className="Dashboard">
       
-      <button> </button>
-      <button> </button>
-      <button> </button>
-      <button> </button>
+      <button>strike</button>
+      <button>ball</button>
+      <button>foul</button>
+      <button>hit</button>
+
+
 
       </div>
     );

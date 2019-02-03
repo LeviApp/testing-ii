@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Display from './Display.js';
+import App from './App';
+import Display from './Display';
 
 
-describe('The Display Component', () => {
+describe('The Dashboard Component', () => {
 
   it('renders without crashing', () => {
     const div = document.createElement('div');
