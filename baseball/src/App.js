@@ -17,11 +17,18 @@ class App extends Component {
 
 
 }
+
+
+countUP = (event) => {
+  event.preventDefault();
+  const value = event.target.value;
+  this.setState({[value]: this.state[value] + 1 })
+}
   render() {
     return (
       <div className="App">
         <Display strike={this.state.strike} ball={this.state.ball} foul={this.state.foul} hit={this.state.hit}/>
-        <Dashboard />
+        <Dashboard counting={this.countUP}/>
 
       </div>
     );

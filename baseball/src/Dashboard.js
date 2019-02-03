@@ -5,10 +5,10 @@ class Dashboard extends Component {
     return (
       <div className="Dashboard">
       
-      <button>strike</button>
-      <button>ball</button>
-      <button>foul</button>
-      <button>hit</button>
+      <button value='strike' onClick={this.props.counting}>strike</button>
+      <button value='ball' onClick={this.props.counting}>ball</button>
+      <button value='foul' onClick={this.props.counting}>foul</button>
+      <button value='hit' onClick={this.props.counting}>hit</button>
 
 
 
