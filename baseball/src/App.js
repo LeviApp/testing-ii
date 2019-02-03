@@ -9,8 +9,8 @@ class App extends Component {
     super(props);
     this.state = {
         strike: 0,
-        ball: 2,
-        foul: 3,
+        ball: 0,
+        foul: 0,
         hit: 0,
     }
 
@@ -22,7 +22,19 @@ class App extends Component {
 countUP = (event) => {
   event.preventDefault();
   const value = event.target.value;
-  this.setState({[value]: this.state[value] + 1 })
+  
+  if (this.state.strike<3 || this.state.ball<4)
+  {this.setState({[value]: this.state[value] + 1 })}
+
+  if (this.state.strike>=2 && value !== 'foul' && value !== 'ball' || this.state.ball>=3 && value !== 'foul' && value !== 'strike') {
+    this.setState({strike:0, ball:0, foul:0,})
+
+  }
+
+  if (value === 'hit') {
+    this.setState({strike:0, ball:0, foul:0})
+  }
+  console.log(value)
 }
   render() {
     return (
